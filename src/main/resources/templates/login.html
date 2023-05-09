@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+	<title>MusicrewContacts Login</title>
+	<link rel="stylesheet" th:href="@{/css/login.css}">
+</head>
+
+<body>
+	<div class="login-page">
+		<img th:src="@{images/loginpage.jpg}">
+
+		<div id="login-page-rightside">
+			<img th:src="@{images/MusicrewLogo.png}">
+			<div>
+				<form id="form" th:action="@{/Contacts}">
+					<label class="label-username">username</label>
+					<input class="text-box" type="text" />
+
+					<label class="label-password">password</label>
+					<input class="text-box" type="password" /><br>
+
+					<input type="submit" value="login" id="login-button">
+					<br>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
